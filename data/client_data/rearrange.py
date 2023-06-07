@@ -43,9 +43,11 @@ def redivide_files(path):
         for img_path, labels_path in zip(imgs_path, labels_path):
             try:
                 shutil.move(img_path.replace(f'/val/', '/train/'), img_path)
+                shutil.move(labels_path.replace(f'/val/', '/train/'), labels_path)
             except:
                 try:
                     shutil.move(img_path.replace(f'/test/', '/train/'), img_path)
+                    shutil.move(labels_path.replace(f'/test/', '/train/'), labels_path)
                 except:
                     pass
 
