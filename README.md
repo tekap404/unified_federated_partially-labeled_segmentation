@@ -4,6 +4,23 @@
 
 UFPS is an effective federated learning framework for partially annotated datasets. It consists of ULL for class heterogeneity and sUSAM for client drift.
 
+## Citation
+
+*Jiang, L., Ma, L.Y., Zeng, T.Y., & Ying, S.H. (2024). UFPS: A unified framework for partially annotated federated segmentation in heterogeneous data distribution. Patterns.*
+
+```
+@article{Jiang2024UFPSAU,
+  title={UFPS: A unified framework for partially annotated federated segmentation in heterogeneous data distribution},
+  author={Le Jiang and Li Yan Ma and Tie Yong Zeng and Shi Hui Ying},
+  journal={Patterns},
+  year={2024},
+  url={https://api.semanticscholar.org/CorpusID:267277291}
+}
+```
+
+## Abstract
+Partially supervised segmentation is a label-saving method based on datasets with fractional classes labeled and intersectant. However, its practical application in real-world medical scenarios is hindered by privacy concerns and data heterogeneity. To address these issues without compromising privacy, federated partially supervised segmentation (FPSS) is formulated in this work. The primary challenges for FPSS are class heterogeneity and client drift. We propose a Unified Federated Partially-labeled Segmentation (UFPS) framework to segment pixels within all classes for partially-annotated datasets by training a comprehensive global model which avoids class collision. Our framework includes Unified Label Learning and sparsed Unified Sharpness Aware Minimization for unification of class and feature space, respectively. Through empirical studies, we found that traditional methods in partially supervised segmentation and federated learning often struggle with class collision when combined. Our extensive experiments on real medical datasets demonstrate better deconflicting and generalization capabilities of UFPS. 
+
 ## Environment
 
 ```
@@ -137,6 +154,6 @@ CUDA_VISIBLE_DEVICES=0 python test_main.py --multi_gpu 0 --gpu_num 1 --plot Fals
 
 Always remember to change the path of 'cfg.test_path' in '/your_path/code/configs/setting1_config.py' !
 
-## Note
+## Pretrained weights
 
-Pretrained checkpoints will be released after paper acceptance.
+Pretrained checkpoints and data division files can be found at [google drive](https://drive.google.com/drive/folders/14kG1tZbLTtmV7zzWZ0QzDLdVxMI-vK3E?usp=drive_link).
