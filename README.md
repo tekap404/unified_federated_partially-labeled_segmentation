@@ -156,4 +156,4 @@ Always remember to change the path of 'cfg.test_path' in '/your_path/code/config
 
 ## Pretrained weights
 
-Pretrained checkpoints and data division files can be found at [google drive](https://drive.google.com/drive/folders/14kG1tZbLTtmV7zzWZ0QzDLdVxMI-vK3E?usp=drive_link).
+Pretrained checkpoints and data division files can be found at [google drive](https://drive.google.com/drive/folders/14kG1tZbLTtmV7zzWZ0QzDLdVxMI-vK3E?usp=sharing).
